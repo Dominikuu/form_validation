@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step2</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v  5.1.0/css/all.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+	
+	<link rel="stylesheet" href="./style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<script src="./ui-control.js"></script>
+	<script src="./univer.js"></script>
+	<script src="./vali-base.js"></script>
+</head>
+<body>
+	<div class="line wow fadeInLeft" data-wow-duration="2.2s"></div>
+	<div class="wrapper">
+		<div class="container wow fadeInUp" data-wow-delay="2.2s">
+			<div class="row">
+				<div class="col-12">
+					<div class="top-line"></div>
+					<div class="progress">
+						<div class="in done"></div>
+						<div class="in"></div>
+						<div class="in"></div>
+						<div class="in"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<center>
+						<h1>General Information</h1>
+						<p>Who are you?</p>
+					</center>
+				</div>
+			</div>
+			<form method="POST" enctype="application/x-www-form-urlencoded" action="/step3.html" class="wow fadeInUp" data-wow-duration="2.4s">
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" placeholder="Example Name" name="Name" class="form-control">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label>Phone*</label>
+							<input type="text" placeholder="(09)XXXX-XXX" name="Phone" class="form-control" data-toggle="tooltip" title="NUMBER ONLY" data-valid="1">
+							<i class="fas fa-exclamation-triangle"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<label>Birth Date</label>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="form-group">
+							
+						<select name="Year" class="form-control" data-from="1920" data-to="2019" required>
+							<option value="" hidden>YYYY</option>
+						</select>
+
+						
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="form-group">
+						<select name="Month" class="form-control"  data-from="1" data-to="12" required>
+							<option value=""  hidden>MM</option>
+						</select>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="form-group">
+						
+							<select name="Day" class="form-control"  data-from="1" data-to="31" required>
+								<option value=""  hidden>DD</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<label>Address*</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<select class="form-control city" name="City" required>
+								<option value="" hidden>City</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<select name="Region" class="form-control region">
+								<option value="" hidden>Dist</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<input type="text" data-valid="1" name="Address" placeholder="detail address" data-toggle="tooltip" title="REQUIRED FIELED"class="form-control">
+							<i class="fas fa-exclamation-triangle"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary form-control warn" formnovalidate>SUBMIT & NEXT</button>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>	
+	</div>
+	
+	
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+<script src="./index.js"></script>
+
+</html>

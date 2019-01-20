@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step3</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+	
+	<link rel="stylesheet" href="./style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<script src="./ui-control.js"></script>
+	<script src="./univer.js"></script>
+	<script src="./vali-upload.js"></script>
+</head>
+<body>
+	<div class="line wow fadeInLeft" data-wow-duration="2.2s"></div>
+	<div class="wrapper">
+		<div class="container wow fadeInUp" data-wow-delay="2.2s">
+			<div class="row">
+				<div class="col-12">
+					<div class="top-line"></div>
+					<div class="progress">
+						<div class="in done"></div>
+						<div class="in done"></div>
+						<div class="in"></div>
+						<div class="in"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<center>
+						<h1>Create Account</h1>
+						<p>Glad to see you here</p>
+					</center>
+				</div>
+			</div>
+			<form method="POST" enctype="application/x-www-form-urlencoded" action="/step4.html" class="wow fadeInUp" data-wow-duration="2.4s">
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<label>
+								<div class="upload-box">
+									<i class="fas fa-images"></i>
+									<div>Upload Only 3 Photos
+										<br>Max Size: 150 x 150 pixels
+									</div>
+									
+								</div>
+								<input type="file" name="Photos" accept="imag/*" multiple>
+							</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<button type="button" class="btn btn-warning form-control warn msg" value="">
+								<i class="fas fa-exclamation-triangle"></i>
+								
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="row list">
+					<div class="col-4">
+						<div class="img"><img></div>
+					</div>
+					<div class="col-4">
+						<div class="img"><img></div>
+					</div>
+					<div class="col-4">
+						<div class="img"><img></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary form-control warn"> Submint & Next</button>
+
+						</div>
+					</div>
+				</div>
+
+
+			</form>
+		</div>	
+	</div>
+	
+	
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+<script src="./index.js"></script>
+
+</html>
